@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1023444292164-58q2vmd2bvldeus8v2n0qnv7vgos97at.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1023444292164-58q2vmd2bvldeus8v2n0qnv7vgos97at</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAFxSX_Hbz-MXAp9pSXenz7LmsrwQleyuA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1023444292164</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>vmityuklyaev.Mars2024</string>
+	<key>PROJECT_ID</key>
+	<string>mars2024-e008b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mars2024-e008b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1023444292164:ios:a098a5677f800d8a652211</string>
+	<key>DATABASE_URL</key>
+	<string>https://mars2024-e008b.firebaseio.com</string>
+</dict>
+</plist>

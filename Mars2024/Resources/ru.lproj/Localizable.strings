@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  Mars2024
+
+  Created by Vladislav Mityuklyaev on 10.07.2020.
+  Copyright © 2020 Vladislav Mityuklyaev. All rights reserved.
+*/
+
+/* Errors */
+"ErrorAlertTitle" = "Something went wrong";
+"ApiErrorObjectNotFound" = "Object not found";
+"ApiErrorBadResponse" = "Server return bad response";
+"ApiErrorBadRequest" = "Bad request";
+"ApiErrorUnknown" = "Unknown error";
+
+/* Base */
+"ok" = "Ok";
+"close" = "Close";
+
+/* Launcher */
+"LauncherAlertTitle" = "Something went wrong";
+"LauncherAlertInitialErrorMessage" = "An error occurred while loading data. Try again later.";
+"LauncherAlertBtnTitleRepeat" = "Repeat";
+
+/* Registration */
+"RegistrationSetPhoto" = "Set astronaut photo";
+"RegistrationProfilePhoto" = "Astronaut photo";
+"RegistrationFieldTitleGivename" = "Astronaut Name";
+"RegistrationFieldTitleFamilyname" = "Last name of the astronaut";
+"RegistrationFieldTitleAge" = "Astronaut's date of birth";
+"RegistrationSubmitBtnTitle" = "Continue";
+"RegistrationPickerBtnTitle" = "Close";
+"RegistrationSkipBtnTitle" = "Skip";
+
+/* Pick photo */
+"PhotoPickChoosePhotoSource" = "Where do you want to choose a photo from?";
+"PhotoPickPhotoLibrary" = "Choose from photo library";
+"PhotoPickCamera" = "Take a photo";
+"PhotoPickRemove" = "Remove a photo";
+"PhotoPickCancel" = "Отмена";
+
+/* Validation errors */
+"ValidationRequied" = "Это обязательно нужно заполнить";
+"ValidationAlphabetic" = "Можно использовать только буквы";
+"ValidationTooSmall" = "Напишите быть больше %d символов";
+"ValidationIllegalAge" = "Все астронавты старше 18 лет";
+
+/* SignUp */
+"SignUpTitle" = "Welcome to Mars2024";
+"SignUpSubtitle" = "Choose a login method";
+"SignUpWithFacebook" = "Sign up with Facebook";
+"SignUpWithGoogle" = "Sign up with Google";
+"SignUpWithApple" = "Sign up with Apple";
+"SignUpAgreementsText" = "By continuing, you accept the astronaut agreement.";
+"SignUpAstronautAgreement" = "astronaut agreement";
+
+/* Agreement */
+"AgreementTitle" = "Nobody ever reads the agreements,\nso we did not write them :]";
