@@ -12,6 +12,8 @@
 "ApiErrorBadResponse" = "Server return bad response";
 "ApiErrorBadRequest" = "Bad request";
 "ApiErrorUnknown" = "Unknown error";
+"ApiErrorServerError" = "Server error";
+"ApiErrorUserUnauthorized" = "Need authorisation";
 
 /* Base */
 "ok" = "Ok";
@@ -37,13 +39,13 @@
 "PhotoPickPhotoLibrary" = "Choose from photo library";
 "PhotoPickCamera" = "Take a photo";
 "PhotoPickRemove" = "Remove a photo";
-"PhotoPickCancel" = "Отмена";
+"PhotoPickCancel" = "Cancel";
 
 /* Validation errors */
-"ValidationRequied" = "Это обязательно нужно заполнить";
-"ValidationAlphabetic" = "Можно использовать только буквы";
-"ValidationTooSmall" = "Здесь должно быть больше %d символов";
-"ValidationIllegalAge" = "Астронавту долже быть больше 18 лет";
+"ValidationRequied" = "This field is required";
+"ValidationAlphabetic" = "Only letters can be used.";
+"ValidationTooSmall" = "There must be more than %d characters";
+"ValidationIllegalAge" = "Astronaut must be over 18 years old";
 
 /* SignUp */
 "SignUpTitle" = "Welcome to Mars2024";
@@ -57,7 +59,11 @@
 /* Agreement */
 "AgreementTitle" = "Nobody ever reads the agreements,\nso we did not write them :]";
 
-/* Menu */
-"MenuProfile" = "Astro profile";
-"MenuLaunches" = "All launches";
-"MenuLogout" = "Exit";
+/*  Launch list */
+"LaunchListLogOutTitle" = "Logout";
+"LaunchListLogOutSubtitle" = "Are you sure you want to exit?";
+"LaunchListLogOutAccept" = "Sure";
+"LaunchListLogOutDecline" = "Cancel";
+
+/* Launch Details */
+"LaunchDetailsEmptyDescription" = "No description";

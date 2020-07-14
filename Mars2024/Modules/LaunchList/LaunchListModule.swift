@@ -18,6 +18,8 @@ class LaunchListModule: ViewControllerModule {
     
     let container: Container = Container(parent: Dependencies.shared.container)
     
+    var launchDetailsModule: LaunchDetailsModule?
+    
     init() {
         container.register(LaunchListView.self) { (r) in
             let result = LaunchListViewController()
@@ -29,9 +31,10 @@ class LaunchListModule: ViewControllerModule {
         container.register(LaunchListPresenter.self) { (r) in
             LaunchListPresenterImpl()
             }.initCompleted { [weak self] (r, presenter) in
-                (presenter as! LaunchListPresenterImpl).attachView(r.resolve(LaunchListView.self)!)
+                presenter.view = r.resolve(LaunchListView.self)
                 presenter.router = self
                 presenter.module = self
+                presenter.launchesRepository = r.resolve(LaunchRepository.self)
         }
     }
     
@@ -43,5 +46,15 @@ class LaunchListModule: ViewControllerModule {
 }
 
 extension LaunchListModule: LaunchListRouter {
+    func openLaunchDetails(launch: Launch) {
+        launchDetailsModule = LaunchDetailsModule(launch: launch)
+        pushScreen(launchDetailsModule!.entry(), animated: true)
+    }
     
+    func logout() {
+        let link = LogoutDeepLink(url: nil)!
+        if let rootHandler = DeepLinkProcessor.default.handler {
+            rootHandler.open(deeplink: link, animated: false) as Void?
+        }
+    }
 }

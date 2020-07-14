@@ -15,5 +15,4 @@ struct ApiComponents {
     var encoding: ParameterEncoding
     var data: [String: Any]?
     var headers: [String: String]?
-    var multipertItems: [MultipartItem]?
 }

@@ -6,13 +6,14 @@ target 'Mars2024' do
   use_frameworks!
 
   # Pods for Mars2024
-  pod 'R.swift'
-  pod 'RxSwift'
-  pod 'SnapKit'
+  pod 'R.swift', '~> 5.0'
+  pod 'RxSwift', '~> 5.0'
+  pod 'SnapKit', '~> 5.0'
   pod 'RealmSwift' 
-  pod 'Swinject'
-  pod 'ObjectMapper'
-  pod 'RealmSwift'
+  pod 'Swinject', '~> 2.6'
+  pod 'ObjectMapper', '~> 3.5'
+  pod 'SwiftyJSON', '~> 5.0'
+  pod 'RealmSwift', '~> 3.16'
   pod 'MBProgressHUD'
   pod 'Firebase'
   pod 'Firebase/Auth'
@@ -23,7 +24,8 @@ target 'Mars2024' do
   pod 'GoogleSignIn'
   pod 'Texture'
   pod 'Alamofire'
-  pod 'RxAlamofire'
+  pod 'AlamofireImage', '~> 3.5'
+  pod 'RxAlamofire', '~> 5.0'
 
   target 'Mars2024Tests' do
     inherit! :search_paths

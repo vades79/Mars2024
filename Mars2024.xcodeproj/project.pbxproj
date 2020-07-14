@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F25A3BE24BCA60D00BBC2D6 /* ProfileModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3BD24BCA60D00BBC2D6 /* ProfileModule.swift */; };
-		5F25A3C024BCA61C00BBC2D6 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3BF24BCA61C00BBC2D6 /* ProfilePresenter.swift */; };
-		5F25A3C224BCA62800BBC2D6 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3C124BCA62800BBC2D6 /* ProfileRouter.swift */; };
-		5F25A3C424BCA63300BBC2D6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3C324BCA63300BBC2D6 /* ProfileView.swift */; };
+		59493F98AAB2580C674CC0B5 /* Pods_Mars2024.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4258E0B867E5559370AA7724 /* Pods_Mars2024.framework */; };
 		5F25A3D024BCA72600BBC2D6 /* LaunchListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3CF24BCA72600BBC2D6 /* LaunchListModule.swift */; };
 		5F25A3D224BCA73000BBC2D6 /* LaunchListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3D124BCA73000BBC2D6 /* LaunchListPresenter.swift */; };
 		5F25A3D424BCA74500BBC2D6 /* LaunchListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A3D324BCA74500BBC2D6 /* LaunchListRouter.swift */; };
@@ -27,6 +24,18 @@
 		5F25A40824BCD60C00BBC2D6 /* ApiSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A40724BCD60C00BBC2D6 /* ApiSessionType.swift */; };
 		5F25A40A24BCD63000BBC2D6 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A40924BCD63000BBC2D6 /* ApiRouter.swift */; };
 		5F25A40F24BCD6F900BBC2D6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A40E24BCD6F900BBC2D6 /* Config.swift */; };
+		5F25A41124BCDDAF00BBC2D6 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F25A41024BCDDAF00BBC2D6 /* Config.plist */; };
+		5F25A41324BCDEBF00BBC2D6 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A41224BCDEBF00BBC2D6 /* LaunchRouter.swift */; };
+		5F25A41824BCF82300BBC2D6 /* LaunchCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A41724BCF82300BBC2D6 /* LaunchCellNode.swift */; };
+		5F25A41A24BCF84300BBC2D6 /* TitleAndSubtitleDisplayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A41924BCF84300BBC2D6 /* TitleAndSubtitleDisplayNode.swift */; };
+		5F25A41D24BCFA9400BBC2D6 /* LaunchDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A41C24BCFA9400BBC2D6 /* LaunchDetailsModule.swift */; };
+		5F25A41F24BCFAA400BBC2D6 /* LaunchDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A41E24BCFAA400BBC2D6 /* LaunchDetailsPresenter.swift */; };
+		5F25A42124BCFAB200BBC2D6 /* LaunchDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42024BCFAB200BBC2D6 /* LaunchDetailsRouter.swift */; };
+		5F25A42324BCFAC000BBC2D6 /* LaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42224BCFAC000BBC2D6 /* LaunchDetailsView.swift */; };
+		5F25A42624BCFC4A00BBC2D6 /* LaunchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42424BCFC4900BBC2D6 /* LaunchRepository.swift */; };
+		5F25A42724BCFC4A00BBC2D6 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42524BCFC4A00BBC2D6 /* PersonRepository.swift */; };
+		5F25A42924BD037F00BBC2D6 /* LaunchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42824BD037F00BBC2D6 /* LaunchList.swift */; };
+		5F25A42D24BD0ACB00BBC2D6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42C24BD0ACB00BBC2D6 /* BaseResponse.swift */; };
 		5F6BA26724B99D1B008CDDD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BA26624B99D1B008CDDD0 /* GoogleService-Info.plist */; };
 		5F6BA26C24B9A6E4008CDDD0 /* PersonGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA26B24B9A6E4008CDDD0 /* PersonGateway.swift */; };
 		5F6BA26F24B9A8D8008CDDD0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA26E24B9A8D8008CDDD0 /* Person.swift */; };
@@ -34,7 +43,6 @@
 		5F6BA27624B9ABC9008CDDD0 /* JsonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA27524B9ABC9008CDDD0 /* JsonObject.swift */; };
 		5F6BA27824B9B4A1008CDDD0 /* StorageBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA27724B9B4A1008CDDD0 /* StorageBase.swift */; };
 		5F6BA27A24B9B570008CDDD0 /* JsonStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA27924B9B570008CDDD0 /* JsonStorage.swift */; };
-		5F6BA27F24B9BB0E008CDDD0 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA27E24B9BB0E008CDDD0 /* PersonRepository.swift */; };
 		5F6BA28224B9BC03008CDDD0 /* PersonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA28124B9BC03008CDDD0 /* PersonError.swift */; };
 		5F6BA28524B9FAA4008CDDD0 /* UIColor+Mars2024.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA28424B9FAA4008CDDD0 /* UIColor+Mars2024.swift */; };
 		5F6BA28724B9FAC8008CDDD0 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA28624B9FAC8008CDDD0 /* UIColor+Hex.swift */; };
@@ -106,9 +114,9 @@
 		5FE8D25F24BB837B00AC3CCC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8D25E24BB837B00AC3CCC /* SignUpView.swift */; };
 		5FE8D26124BB8E2B00AC3CCC /* AuthorizationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8D26024BB8E2B00AC3CCC /* AuthorizationButton.swift */; };
 		5FE8D26C24BB98EB00AC3CCC /* String+AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8D26B24BB98EB00AC3CCC /* String+AttributedText.swift */; };
-		97D9DFB560A9E7F8D28A6DBE /* Pods_Mars2024.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EEDE4F4B350D059E1C4A7A /* Pods_Mars2024.framework */; };
-		CF5DD2887AA3627889732CB4 /* Pods_Mars2024_Mars2024UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1912ED4BA6398118F2EAA4 /* Pods_Mars2024_Mars2024UITests.framework */; };
-		E710DB672F47E7034EF2B19C /* Pods_Mars2024Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E32A1C519EE883B37893EA0 /* Pods_Mars2024Tests.framework */; };
+		5FFCDFE724BD29D600302847 /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCDFE624BD29D600302847 /* ImagesView.swift */; };
+		642039130B554E692D230FB4 /* Pods_Mars2024Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D3983252090624C7B76FED /* Pods_Mars2024Tests.framework */; };
+		C5F4066595FE9D9B67B57F22 /* Pods_Mars2024_Mars2024UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E9B17A6C780885A27F2700 /* Pods_Mars2024_Mars2024UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,13 +137,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A4F7163B10D6D7F986F0438 /* Pods-Mars2024.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024.debug.xcconfig"; path = "Target Support Files/Pods-Mars2024/Pods-Mars2024.debug.xcconfig"; sourceTree = "<group>"; };
-		3B1912ED4BA6398118F2EAA4 /* Pods_Mars2024_Mars2024UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mars2024_Mars2024UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E32A1C519EE883B37893EA0 /* Pods_Mars2024Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mars2024Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F25A3BD24BCA60D00BBC2D6 /* ProfileModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModule.swift; sourceTree = "<group>"; };
-		5F25A3BF24BCA61C00BBC2D6 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
-		5F25A3C124BCA62800BBC2D6 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
-		5F25A3C324BCA63300BBC2D6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		12E9B17A6C780885A27F2700 /* Pods_Mars2024_Mars2024UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mars2024_Mars2024UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285C27344952584509461AC9 /* Pods-Mars2024-Mars2024UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024-Mars2024UITests.release.xcconfig"; path = "Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests.release.xcconfig"; sourceTree = "<group>"; };
+		3DB54F89FE9B9594660B0B94 /* Pods-Mars2024.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024.debug.xcconfig"; path = "Target Support Files/Pods-Mars2024/Pods-Mars2024.debug.xcconfig"; sourceTree = "<group>"; };
+		4258E0B867E5559370AA7724 /* Pods_Mars2024.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mars2024.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C526884EA1039C3DF74A8C /* Pods-Mars2024Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024Tests.release.xcconfig"; path = "Target Support Files/Pods-Mars2024Tests/Pods-Mars2024Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5377B0C0DFB948E2766B6F13 /* Pods-Mars2024-Mars2024UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024-Mars2024UITests.debug.xcconfig"; path = "Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F25A3CF24BCA72600BBC2D6 /* LaunchListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListModule.swift; sourceTree = "<group>"; };
 		5F25A3D124BCA73000BBC2D6 /* LaunchListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListPresenter.swift; sourceTree = "<group>"; };
 		5F25A3D324BCA74500BBC2D6 /* LaunchListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListRouter.swift; sourceTree = "<group>"; };
@@ -152,6 +159,18 @@
 		5F25A40724BCD60C00BBC2D6 /* ApiSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSessionType.swift; sourceTree = "<group>"; };
 		5F25A40924BCD63000BBC2D6 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		5F25A40E24BCD6F900BBC2D6 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		5F25A41024BCDDAF00BBC2D6 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		5F25A41224BCDEBF00BBC2D6 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
+		5F25A41724BCF82300BBC2D6 /* LaunchCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellNode.swift; sourceTree = "<group>"; };
+		5F25A41924BCF84300BBC2D6 /* TitleAndSubtitleDisplayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndSubtitleDisplayNode.swift; sourceTree = "<group>"; };
+		5F25A41C24BCFA9400BBC2D6 /* LaunchDetailsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsModule.swift; sourceTree = "<group>"; };
+		5F25A41E24BCFAA400BBC2D6 /* LaunchDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsPresenter.swift; sourceTree = "<group>"; };
+		5F25A42024BCFAB200BBC2D6 /* LaunchDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsRouter.swift; sourceTree = "<group>"; };
+		5F25A42224BCFAC000BBC2D6 /* LaunchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsView.swift; sourceTree = "<group>"; };
+		5F25A42424BCFC4900BBC2D6 /* LaunchRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRepository.swift; sourceTree = "<group>"; };
+		5F25A42524BCFC4A00BBC2D6 /* PersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		5F25A42824BD037F00BBC2D6 /* LaunchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchList.swift; sourceTree = "<group>"; };
+		5F25A42C24BD0ACB00BBC2D6 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		5F6BA26624B99D1B008CDDD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F6BA26B24B9A6E4008CDDD0 /* PersonGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonGateway.swift; sourceTree = "<group>"; };
 		5F6BA26E24B9A8D8008CDDD0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -159,7 +178,6 @@
 		5F6BA27524B9ABC9008CDDD0 /* JsonObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonObject.swift; sourceTree = "<group>"; };
 		5F6BA27724B9B4A1008CDDD0 /* StorageBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageBase.swift; sourceTree = "<group>"; };
 		5F6BA27924B9B570008CDDD0 /* JsonStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonStorage.swift; sourceTree = "<group>"; };
-		5F6BA27E24B9BB0E008CDDD0 /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		5F6BA28124B9BC03008CDDD0 /* PersonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonError.swift; sourceTree = "<group>"; };
 		5F6BA28424B9FAA4008CDDD0 /* UIColor+Mars2024.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Mars2024.swift"; sourceTree = "<group>"; };
 		5F6BA28624B9FAC8008CDDD0 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -239,12 +257,10 @@
 		5FE8D25E24BB837B00AC3CCC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5FE8D26024BB8E2B00AC3CCC /* AuthorizationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationButton.swift; sourceTree = "<group>"; };
 		5FE8D26B24BB98EB00AC3CCC /* String+AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AttributedText.swift"; sourceTree = "<group>"; };
-		6718064F29FC9D24E3A9FB15 /* Pods-Mars2024-Mars2024UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024-Mars2024UITests.debug.xcconfig"; path = "Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6AC43A7019638252811BBDD5 /* Pods-Mars2024-Mars2024UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024-Mars2024UITests.release.xcconfig"; path = "Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests.release.xcconfig"; sourceTree = "<group>"; };
-		8B69FAEC8763C89351DA9BBF /* Pods-Mars2024Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024Tests.debug.xcconfig"; path = "Target Support Files/Pods-Mars2024Tests/Pods-Mars2024Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		98E6F3EEA2C407E008856E98 /* Pods-Mars2024.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024.release.xcconfig"; path = "Target Support Files/Pods-Mars2024/Pods-Mars2024.release.xcconfig"; sourceTree = "<group>"; };
-		A4EEDE4F4B350D059E1C4A7A /* Pods_Mars2024.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mars2024.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA2CFADF096FF89430401974 /* Pods-Mars2024Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024Tests.release.xcconfig"; path = "Target Support Files/Pods-Mars2024Tests/Pods-Mars2024Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5FFCDFE624BD29D600302847 /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
+		72D3983252090624C7B76FED /* Pods_Mars2024Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mars2024Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DD05B04EC31106C5722BA7 /* Pods-Mars2024Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024Tests.debug.xcconfig"; path = "Target Support Files/Pods-Mars2024Tests/Pods-Mars2024Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFBF50A772DFF396DCF67590 /* Pods-Mars2024.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mars2024.release.xcconfig"; path = "Target Support Files/Pods-Mars2024/Pods-Mars2024.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,7 +268,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D9DFB560A9E7F8D28A6DBE /* Pods_Mars2024.framework in Frameworks */,
+				59493F98AAB2580C674CC0B5 /* Pods_Mars2024.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +276,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E710DB672F47E7034EF2B19C /* Pods_Mars2024Tests.framework in Frameworks */,
+				642039130B554E692D230FB4 /* Pods_Mars2024Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,50 +284,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF5DD2887AA3627889732CB4 /* Pods_Mars2024_Mars2024UITests.framework in Frameworks */,
+				C5F4066595FE9D9B67B57F22 /* Pods_Mars2024_Mars2024UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FCFF61807EB9D6B4BB634D1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A4EEDE4F4B350D059E1C4A7A /* Pods_Mars2024.framework */,
-				3B1912ED4BA6398118F2EAA4 /* Pods_Mars2024_Mars2024UITests.framework */,
-				3E32A1C519EE883B37893EA0 /* Pods_Mars2024Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4AF7D05D18183594CD5E058E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1A4F7163B10D6D7F986F0438 /* Pods-Mars2024.debug.xcconfig */,
-				98E6F3EEA2C407E008856E98 /* Pods-Mars2024.release.xcconfig */,
-				6718064F29FC9D24E3A9FB15 /* Pods-Mars2024-Mars2024UITests.debug.xcconfig */,
-				6AC43A7019638252811BBDD5 /* Pods-Mars2024-Mars2024UITests.release.xcconfig */,
-				8B69FAEC8763C89351DA9BBF /* Pods-Mars2024Tests.debug.xcconfig */,
-				FA2CFADF096FF89430401974 /* Pods-Mars2024Tests.release.xcconfig */,
+				3DB54F89FE9B9594660B0B94 /* Pods-Mars2024.debug.xcconfig */,
+				FFBF50A772DFF396DCF67590 /* Pods-Mars2024.release.xcconfig */,
+				5377B0C0DFB948E2766B6F13 /* Pods-Mars2024-Mars2024UITests.debug.xcconfig */,
+				285C27344952584509461AC9 /* Pods-Mars2024-Mars2024UITests.release.xcconfig */,
+				F5DD05B04EC31106C5722BA7 /* Pods-Mars2024Tests.debug.xcconfig */,
+				52C526884EA1039C3DF74A8C /* Pods-Mars2024Tests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		5F25A3BC24BCA5FB00BBC2D6 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				5F25A3BD24BCA60D00BBC2D6 /* ProfileModule.swift */,
-				5F25A3BF24BCA61C00BBC2D6 /* ProfilePresenter.swift */,
-				5F25A3C124BCA62800BBC2D6 /* ProfileRouter.swift */,
-				5F25A3C324BCA63300BBC2D6 /* ProfileView.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		5F25A3CE24BCA71300BBC2D6 /* LaunchList */ = {
 			isa = PBXGroup;
 			children = (
+				5F25A41624BCF81700BBC2D6 /* Node */,
 				5F25A3CF24BCA72600BBC2D6 /* LaunchListModule.swift */,
 				5F25A3D124BCA73000BBC2D6 /* LaunchListPresenter.swift */,
 				5F25A3D324BCA74500BBC2D6 /* LaunchListRouter.swift */,
@@ -340,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				5F25A3F124BCD0BC00BBC2D6 /* Dto */,
+				5F25A41224BCDEBF00BBC2D6 /* LaunchRouter.swift */,
 				5F25A40124BCD54100BBC2D6 /* LaunchGateway.swift */,
 			);
 			path = Launch;
@@ -350,6 +347,7 @@
 			children = (
 				5F25A3F224BCD0C600BBC2D6 /* LaunchDto.swift */,
 				5F25A3F424BCD0D800BBC2D6 /* LinksDto.swift */,
+				5F25A42C24BD0ACB00BBC2D6 /* BaseResponse.swift */,
 			);
 			path = Dto;
 			sourceTree = "<group>";
@@ -378,8 +376,30 @@
 			isa = PBXGroup;
 			children = (
 				5F25A40E24BCD6F900BBC2D6 /* Config.swift */,
+				5F25A41024BCDDAF00BBC2D6 /* Config.plist */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		5F25A41624BCF81700BBC2D6 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				5F25A41724BCF82300BBC2D6 /* LaunchCellNode.swift */,
+				5F25A41924BCF84300BBC2D6 /* TitleAndSubtitleDisplayNode.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		5F25A41B24BCFA8100BBC2D6 /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5FFCDFE524BD29C600302847 /* Views */,
+				5F25A41C24BCFA9400BBC2D6 /* LaunchDetailsModule.swift */,
+				5F25A41E24BCFAA400BBC2D6 /* LaunchDetailsPresenter.swift */,
+				5F25A42024BCFAB200BBC2D6 /* LaunchDetailsRouter.swift */,
+				5F25A42224BCFAC000BBC2D6 /* LaunchDetailsView.swift */,
+			);
+			path = LaunchDetails;
 			sourceTree = "<group>";
 		};
 		5F6BA26824B9A6B9008CDDD0 /* Gateway */ = {
@@ -419,6 +439,7 @@
 				5F6BA26E24B9A8D8008CDDD0 /* Person.swift */,
 				5FE8D23424BB1A6900AC3CCC /* PersonFieldType.swift */,
 				5F25A3EE24BCC7BE00BBC2D6 /* Launch.swift */,
+				5F25A42824BD037F00BBC2D6 /* LaunchList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -453,17 +474,10 @@
 		5F6BA27C24B9BACE008CDDD0 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				5F6BA28024B9BBEB008CDDD0 /* PersonRepository */,
+				5F25A42524BCFC4A00BBC2D6 /* PersonRepository.swift */,
+				5F25A42424BCFC4900BBC2D6 /* LaunchRepository.swift */,
 			);
 			path = Repository;
-			sourceTree = "<group>";
-		};
-		5F6BA28024B9BBEB008CDDD0 /* PersonRepository */ = {
-			isa = PBXGroup;
-			children = (
-				5F6BA27E24B9BB0E008CDDD0 /* PersonRepository.swift */,
-			);
-			path = PersonRepository;
 			sourceTree = "<group>";
 		};
 		5F6BA28324B9FA86008CDDD0 /* Styles */ = {
@@ -540,7 +554,7 @@
 				5F6EB49324B708D800D85724 /* Mars2024UITests */,
 				5F6EB47024B708D500D85724 /* Products */,
 				4AF7D05D18183594CD5E058E /* Pods */,
-				2FCFF61807EB9D6B4BB634D1 /* Frameworks */,
+				771C0BF7F3B1F5C1E3FF6D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -560,11 +574,11 @@
 				5F6EB47224B708D500D85724 /* AppDelegate.swift */,
 				5F6EB4A324B70D8000D85724 /* Dependencies.swift */,
 				5F25A40D24BCD6E500BBC2D6 /* Config */,
+				5F6BA26824B9A6B9008CDDD0 /* Gateway */,
+				5F6BA27C24B9BACE008CDDD0 /* Repository */,
 				5F6BA26D24B9A8B6008CDDD0 /* Models */,
 				5F6EB4A824B70F7400D85724 /* Modules */,
 				5F6EB4A524B70E0E00D85724 /* Services */,
-				5F6BA27C24B9BACE008CDDD0 /* Repository */,
-				5F6BA26824B9A6B9008CDDD0 /* Gateway */,
 				5F6EB4BD24B717E200D85724 /* Utils */,
 				5F6BA28324B9FA86008CDDD0 /* Styles */,
 				5F6EB4E624B8AF4600D85724 /* Resources */,
@@ -609,8 +623,8 @@
 				5F6EB4E724B8B1E100D85724 /* Launcher */,
 				5FE8D25724BB833D00AC3CCC /* SignUp */,
 				5F6BA2BF24BA16A1008CDDD0 /* Registration */,
-				5F25A3BC24BCA5FB00BBC2D6 /* Profile */,
 				5F25A3CE24BCA71300BBC2D6 /* LaunchList */,
+				5F25A41B24BCFA8100BBC2D6 /* LaunchDetails */,
 				5F6EB4B624B7112B00D85724 /* Base */,
 				5F6EB4A924B70F7C00D85724 /* Root */,
 			);
@@ -811,6 +825,24 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		5FFCDFE524BD29C600302847 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FFCDFE624BD29D600302847 /* ImagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		771C0BF7F3B1F5C1E3FF6D73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4258E0B867E5559370AA7724 /* Pods_Mars2024.framework */,
+				12E9B17A6C780885A27F2700 /* Pods_Mars2024_Mars2024UITests.framework */,
+				72D3983252090624C7B76FED /* Pods_Mars2024Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -818,13 +850,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F6EB49924B708D800D85724 /* Build configuration list for PBXNativeTarget "Mars2024" */;
 			buildPhases = (
-				EF086211D0ACEEBB09D4D9C5 /* [CP] Check Pods Manifest.lock */,
+				AC368C6093C4F7D75BCC0705 /* [CP] Check Pods Manifest.lock */,
 				5F6EB4A224B70BB300D85724 /* Run Script */,
 				5F6EB46B24B708D500D85724 /* Sources */,
 				5F6EB46C24B708D500D85724 /* Frameworks */,
 				5F6EB46D24B708D500D85724 /* Resources */,
-				D3A6E313A438ED4E6CE7FA76 /* [CP] Embed Pods Frameworks */,
-				974FBBFA68952E974738E18A /* [CP] Copy Pods Resources */,
+				C4E84DB70096530845F19AB7 /* [CP] Embed Pods Frameworks */,
+				8A7F5EA7CE7DEA898B3B6E19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -839,7 +871,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F6EB49C24B708D800D85724 /* Build configuration list for PBXNativeTarget "Mars2024Tests" */;
 			buildPhases = (
-				4BF0E91DAB8C307242D30724 /* [CP] Check Pods Manifest.lock */,
+				7A7A84EC9208B710C8A5B42F /* [CP] Check Pods Manifest.lock */,
 				5F6EB48124B708D800D85724 /* Sources */,
 				5F6EB48224B708D800D85724 /* Frameworks */,
 				5F6EB48324B708D800D85724 /* Resources */,
@@ -858,12 +890,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F6EB49F24B708D800D85724 /* Build configuration list for PBXNativeTarget "Mars2024UITests" */;
 			buildPhases = (
-				82B7C024B3D227A878750DC2 /* [CP] Check Pods Manifest.lock */,
+				0471C7982C537AB618B74DDE /* [CP] Check Pods Manifest.lock */,
 				5F6EB48C24B708D800D85724 /* Sources */,
 				5F6EB48D24B708D800D85724 /* Frameworks */,
 				5F6EB48E24B708D800D85724 /* Resources */,
-				063A1B002839019584266855 /* [CP] Embed Pods Frameworks */,
-				F122457834A0882B16F91A68 /* [CP] Copy Pods Resources */,
+				735575ECCE069EC5BBE7A4D6 /* [CP] Embed Pods Frameworks */,
+				CC970395EE4E22B88B0EEEA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -930,6 +962,7 @@
 				5F6EB4DE24B8AE4C00D85724 /* Localizable.strings in Resources */,
 				5F6BA26724B99D1B008CDDD0 /* GoogleService-Info.plist in Resources */,
 				5F6EB47C24B708D800D85724 /* Assets.xcassets in Resources */,
+				5F25A41124BCDDAF00BBC2D6 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,24 +983,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		063A1B002839019584266855 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BF0E91DAB8C307242D30724 /* [CP] Check Pods Manifest.lock */ = {
+		0471C7982C537AB618B74DDE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -982,7 +998,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Mars2024Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mars2024-Mars2024UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1009,7 +1025,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		82B7C024B3D227A878750DC2 /* [CP] Check Pods Manifest.lock */ = {
+		735575ECCE069EC5BBE7A4D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mars2024-Mars2024UITests/Pods-Mars2024-Mars2024UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7A84EC9208B710C8A5B42F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1024,14 +1057,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Mars2024-Mars2024UITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mars2024Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		974FBBFA68952E974738E18A /* [CP] Copy Pods Resources */ = {
+		8A7F5EA7CE7DEA898B3B6E19 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1048,24 +1081,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3A6E313A438ED4E6CE7FA76 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF086211D0ACEEBB09D4D9C5 /* [CP] Check Pods Manifest.lock */ = {
+		AC368C6093C4F7D75BCC0705 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1087,7 +1103,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F122457834A0882B16F91A68 /* [CP] Copy Pods Resources */ = {
+		C4E84DB70096530845F19AB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mars2024/Pods-Mars2024-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC970395EE4E22B88B0EEEA0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1111,7 +1144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6BA27F24B9BB0E008CDDD0 /* PersonRepository.swift in Sources */,
+				5F25A42324BCFAC000BBC2D6 /* LaunchDetailsView.swift in Sources */,
 				5F25A3EF24BCC7BE00BBC2D6 /* Launch.swift in Sources */,
 				5FE8D22024BAFCA900AC3CCC /* LauncherPresenter.swift in Sources */,
 				5F6BA2D124BA20F7008CDDD0 /* Int+DesignScale.swift in Sources */,
@@ -1120,32 +1153,34 @@
 				5F6BA27824B9B4A1008CDDD0 /* StorageBase.swift in Sources */,
 				5F25A3D224BCA73000BBC2D6 /* LaunchListPresenter.swift in Sources */,
 				5F6BA26C24B9A6E4008CDDD0 /* PersonGateway.swift in Sources */,
+				5F25A41324BCDEBF00BBC2D6 /* LaunchRouter.swift in Sources */,
 				5F6BA28524B9FAA4008CDDD0 /* UIColor+Mars2024.swift in Sources */,
 				5F25A40424BCD5A200BBC2D6 /* ApiRoute.swift in Sources */,
 				5F6EB4CE24B7584600D85724 /* BasePresenter.swift in Sources */,
 				5FE8D24424BB21C200AC3CCC /* UILabel+Style.swift in Sources */,
 				5F6EB4B324B70FD400D85724 /* RootViewWindow.swift in Sources */,
+				5F25A41F24BCFAA400BBC2D6 /* LaunchDetailsPresenter.swift in Sources */,
 				5F6EB4F424B8B5DF00D85724 /* AuthProvider.swift in Sources */,
 				5F6BA28724B9FAC8008CDDD0 /* UIColor+Hex.swift in Sources */,
 				5FE8D25D24BB837100AC3CCC /* SignUpRouter.swift in Sources */,
 				5F25A3F824BCD2C800BBC2D6 /* ApiSessionProvider.swift in Sources */,
 				5F6BA2B824BA07F5008CDDD0 /* PersonStorage.swift in Sources */,
 				5F6EB4CA24B71D2600D85724 /* Lock.swift in Sources */,
-				5F25A3C424BCA63300BBC2D6 /* ProfileView.swift in Sources */,
 				5F6EB4B124B70FC700D85724 /* RootView.swift in Sources */,
 				5F6BA27224B9AA48008CDDD0 /* PersonDto.swift in Sources */,
 				5F25A3D624BCA75000BBC2D6 /* LaunchListView.swift in Sources */,
 				5F6BA2B024B9FD43008CDDD0 /* TextStyle.swift in Sources */,
 				5F6EB4A424B70D8000D85724 /* Dependencies.swift in Sources */,
+				5F25A41D24BCFA9400BBC2D6 /* LaunchDetailsModule.swift in Sources */,
 				5F6BA2C724BA1746008CDDD0 /* RegistrationView.swift in Sources */,
 				5FE8D22424BAFCDE00AC3CCC /* LauncherView.swift in Sources */,
 				5F25A3FA24BCD2E500BBC2D6 /* ApiProvider.swift in Sources */,
 				5F25A40824BCD60C00BBC2D6 /* ApiSessionType.swift in Sources */,
 				5FE8D23924BB1EC700AC3CCC /* String+DateFormat.swift in Sources */,
 				5FE8D24F24BB5FDA00AC3CCC /* RegistrationFieldError.swift in Sources */,
+				5F25A41824BCF82300BBC2D6 /* LaunchCellNode.swift in Sources */,
 				5F25A3F524BCD0D800BBC2D6 /* LinksDto.swift in Sources */,
 				5FE8D25624BB677800AC3CCC /* StoragePaths.swift in Sources */,
-				5F25A3BE24BCA60D00BBC2D6 /* ProfileModule.swift in Sources */,
 				5F6BA2CF24BA1E17008CDDD0 /* UIButton+Style.swift in Sources */,
 				5F6BA28224B9BC03008CDDD0 /* PersonError.swift in Sources */,
 				5FE8D26C24BB98EB00AC3CCC /* String+AttributedText.swift in Sources */,
@@ -1170,12 +1205,14 @@
 				5F6EB4AF24B70FBA00D85724 /* RootRouter.swift in Sources */,
 				5FE8D25424BB64C200AC3CCC /* DateFormatterType.swift in Sources */,
 				5F25A3D024BCA72600BBC2D6 /* LaunchListModule.swift in Sources */,
+				5F25A42124BCFAB200BBC2D6 /* LaunchDetailsRouter.swift in Sources */,
 				5FE8D22224BAFCC700AC3CCC /* LauncherRouter.swift in Sources */,
 				5F6BA2C124BA16B5008CDDD0 /* RegistrationModule.swift in Sources */,
 				5F6BA2CD24BA1C8F008CDDD0 /* UIButtonBuilder.swift in Sources */,
 				5FE8D23724BB1E5800AC3CCC /* Date+Format.swift in Sources */,
 				5FE8D23524BB1A6900AC3CCC /* PersonFieldType.swift in Sources */,
 				5FE8D25124BB633D00AC3CCC /* ValidateService.swift in Sources */,
+				5F25A42924BD037F00BBC2D6 /* LaunchList.swift in Sources */,
 				5FE8D25F24BB837B00AC3CCC /* SignUpView.swift in Sources */,
 				5F6BA2B524BA05EC008CDDD0 /* R.generated.swift in Sources */,
 				5F6EB4CC24B71E7100D85724 /* AppDelegate + DeepLinkHandler.swift in Sources */,
@@ -1185,18 +1222,21 @@
 				5FE8D24C24BB3A6900AC3CCC /* ChangeAvatarView.swift in Sources */,
 				5F6EB4D224B759BE00D85724 /* BaseViewController.swift in Sources */,
 				5F6EB4BA24B711F000D85724 /* BaseNavigationController.swift in Sources */,
+				5FFCDFE724BD29D600302847 /* ImagesView.swift in Sources */,
 				5FE8D21E24BAFB7200AC3CCC /* LauncherModule.swift in Sources */,
-				5F25A3C224BCA62800BBC2D6 /* ProfileRouter.swift in Sources */,
 				5F6BA2C324BA16C2008CDDD0 /* RegistrationPresenter.swift in Sources */,
 				5F6BA2B324B9FD90008CDDD0 /* FontWeight.swift in Sources */,
+				5F25A42724BCFC4A00BBC2D6 /* PersonRepository.swift in Sources */,
 				5F6EB4C424B71A3A00D85724 /* DeepLinkHandler.swift in Sources */,
+				5F25A41A24BCF84300BBC2D6 /* TitleAndSubtitleDisplayNode.swift in Sources */,
 				5F6BA2C524BA1738008CDDD0 /* RegistrationRouter.swift in Sources */,
+				5F25A42624BCFC4A00BBC2D6 /* LaunchRepository.swift in Sources */,
 				5F6EB4BC24B7126800D85724 /* ViewControllerModule.swift in Sources */,
 				5FE8D23C24BB20E500AC3CCC /* RegistrationTextField.swift in Sources */,
 				5F6EB4C224B718EF00D85724 /* Deeplink.swift in Sources */,
+				5F25A42D24BD0ACB00BBC2D6 /* BaseResponse.swift in Sources */,
 				5F6EB4D024B7593500D85724 /* BaseView.swift in Sources */,
 				5FE8D23F24BB20FF00AC3CCC /* RegistrationField.swift in Sources */,
-				5F25A3C024BCA61C00BBC2D6 /* ProfilePresenter.swift in Sources */,
 				5F25A40224BCD54100BBC2D6 /* LaunchGateway.swift in Sources */,
 				5F6BA2BE24BA1315008CDDD0 /* FIrebasePaths.swift in Sources */,
 				5FE8D24124BB216300AC3CCC /* TextFieldErrorView.swift in Sources */,
@@ -1376,11 +1416,11 @@
 		};
 		5F6EB49A24B708D800D85724 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A4F7163B10D6D7F986F0438 /* Pods-Mars2024.debug.xcconfig */;
+			baseConfigurationReference = 3DB54F89FE9B9594660B0B94 /* Pods-Mars2024.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TS76Y85G9V;
+				DEVELOPMENT_TEAM = 97GS2D95GR;
 				INFOPLIST_FILE = Mars2024/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1395,11 +1435,11 @@
 		};
 		5F6EB49B24B708D800D85724 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98E6F3EEA2C407E008856E98 /* Pods-Mars2024.release.xcconfig */;
+			baseConfigurationReference = FFBF50A772DFF396DCF67590 /* Pods-Mars2024.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TS76Y85G9V;
+				DEVELOPMENT_TEAM = 97GS2D95GR;
 				INFOPLIST_FILE = Mars2024/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1414,7 +1454,7 @@
 		};
 		5F6EB49D24B708D800D85724 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B69FAEC8763C89351DA9BBF /* Pods-Mars2024Tests.debug.xcconfig */;
+			baseConfigurationReference = F5DD05B04EC31106C5722BA7 /* Pods-Mars2024Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1437,7 +1477,7 @@
 		};
 		5F6EB49E24B708D800D85724 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA2CFADF096FF89430401974 /* Pods-Mars2024Tests.release.xcconfig */;
+			baseConfigurationReference = 52C526884EA1039C3DF74A8C /* Pods-Mars2024Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1460,7 +1500,7 @@
 		};
 		5F6EB4A024B708D800D85724 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6718064F29FC9D24E3A9FB15 /* Pods-Mars2024-Mars2024UITests.debug.xcconfig */;
+			baseConfigurationReference = 5377B0C0DFB948E2766B6F13 /* Pods-Mars2024-Mars2024UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1481,7 +1521,7 @@
 		};
 		5F6EB4A124B708D800D85724 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AC43A7019638252811BBDD5 /* Pods-Mars2024-Mars2024UITests.release.xcconfig */;
+			baseConfigurationReference = 285C27344952584509461AC9 /* Pods-Mars2024-Mars2024UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

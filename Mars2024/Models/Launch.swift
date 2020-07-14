@@ -12,12 +12,12 @@ class Launch {
     var flightNumber: Int?
     var missionName: String
     var details: String
-    var date: Date?
+    var date: String?
     var missionPatch: URL?
     var missionPatchSmall: URL?
     var images: [URL]?
     
-    init(flightNumber: Int?, missionName: String?, details: String?, date: Date?, missionPatch: URL?, missionPatchSmall: URL?, images: [URL]?) {
+    init(flightNumber: Int?, missionName: String?, details: String?, date: String?, missionPatch: URL?, missionPatchSmall: URL?, images: [URL]?) {
         self.flightNumber = flightNumber
         self.missionName = missionName ?? ""
         self.details = details ?? ""

@@ -8,9 +8,12 @@
 
 import Foundation
 
-class Config {
-    private let apiBaseURL = "APIBaseUrl"
-    private let apiLaunchesPath = 
+protocol Config : class {
+    var baseUrl: String { get }
+}
+
+class ConfigImpl: Config {
+    private let apiBaseURL = "ApiBaseUrl"
     private let configDictionary: NSDictionary
     
     init(){
@@ -18,5 +21,9 @@ class Config {
             fatalError("Config must provided")
         }
         configDictionary = NSDictionary(contentsOfFile: path)!
+    }
+    
+    var baseUrl: String {
+        return configDictionary.object(forKey: apiBaseURL) as! String
     }
 }

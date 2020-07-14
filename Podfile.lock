@@ -212,7 +212,9 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Alamofire (5.2.1)
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
@@ -371,7 +373,7 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
-  - ObjectMapper (4.2.0)
+  - ObjectMapper (3.5.3)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -391,18 +393,19 @@ PODS:
   - R.swift (5.2.2):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
-  - Realm (5.2.0):
-    - Realm/Headers (= 5.2.0)
-  - Realm/Headers (5.2.0)
-  - RealmSwift (5.2.0):
-    - Realm (= 5.2.0)
-  - RxAlamofire (5.5.0):
-    - RxAlamofire/Core (= 5.5.0)
-  - RxAlamofire/Core (5.5.0):
-    - Alamofire (~> 5.1)
-    - RxSwift (~> 5.1)
+  - Realm (3.21.0):
+    - Realm/Headers (= 3.21.0)
+  - Realm/Headers (3.21.0)
+  - RealmSwift (3.21.0):
+    - Realm (= 3.21.0)
+  - RxAlamofire (5.1.0):
+    - RxAlamofire/Core (= 5.1.0)
+  - RxAlamofire/Core (5.1.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
   - RxSwift (5.1.1)
   - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.0)
   - Swinject (2.7.1)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
@@ -427,6 +430,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage (~> 3.5)
   - FBSDKLoginKit
   - Firebase
   - Firebase/Auth
@@ -435,19 +439,22 @@ DEPENDENCIES:
   - Firebase/Storage
   - GoogleSignIn
   - MBProgressHUD
-  - ObjectMapper
-  - R.swift
+  - ObjectMapper (~> 3.5)
+  - R.swift (~> 5.0)
   - RealmSwift
-  - RxAlamofire
-  - RxSwift
-  - SnapKit
-  - Swinject
+  - RealmSwift (~> 3.16)
+  - RxAlamofire (~> 5.0)
+  - RxSwift (~> 5.0)
+  - SnapKit (~> 5.0)
+  - SwiftyJSON (~> 5.0)
+  - Swinject (~> 2.6)
   - Texture
 
 SPEC REPOS:
   trunk:
     - abseil
     - Alamofire
+    - AlamofireImage
     - AppAuth
     - BoringSSL-GRPC
     - FBSDKCoreKit
@@ -485,12 +492,14 @@ SPEC REPOS:
     - RxAlamofire
     - RxSwift
     - SnapKit
+    - SwiftyJSON
     - Swinject
     - Texture
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
@@ -516,21 +525,22 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
-  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
-  Realm: f749c723e272f08fdf1939af5e61d2bd09b203e8
-  RealmSwift: bf0ab78b52c5bafba8b3ad73be8dfb4c1ea5cf01
-  RxAlamofire: 22287c710761466d0123504c566a8381520d4d63
+  Realm: 38e9dcb19104b58407167d99f70d4995f7c16023
+  RealmSwift: 3183cc1ad48378fbcd634311b22c0e6c44021152
+  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: c66195f3db6282db659b6c66b7cf9ceb5dab973f
+PODFILE CHECKSUM: 7ab6d4672628a38a8489cd4d0ce739883952efb5
 
 COCOAPODS: 1.9.1

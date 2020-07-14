@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import RxSwift
 import Alamofire
 import RxAlamofire
+import SwiftyJSON
 
 class ApiProvider {
     var sessionProvider: ApiSessionProvider?
@@ -44,9 +46,36 @@ class ApiProvider {
                 debugPrint(request)
                 return request
             })
+            .debug()
             .responseJSON()
             .map { response in
-                return response.validate()
+                if case .success = response.result {
+                    guard let code = response.response?.statusCode else {
+                        throw ApiError.unknown
+                    }
+                    guard code >= 200, code < 300 else {
+                        guard let data = response.data else {
+                            throw ApiError.byHttpStatusCode(code)
+                        }
+                        do {
+                            let json = try JSON(data: data)
+                            guard let dict = json.dictionaryObject, let resp = BaseResponse(JSON: dict) else {
+                                throw ApiError.byHttpStatusCode(code)
+                            }
+                            guard let errCode = resp.errorCode else {
+                                throw ApiError.byHttpStatusCode(code)
+                            }
+                            throw ApiError.byCode(errCode)
+                        } catch {
+                            throw ApiError.byHttpStatusCode(code)
+                        }
+                    }
+                    guard let _ = response.data else {
+                        throw ApiError.badResponse
+                    }
+                }
+                return response
+                
         }
     }
 }

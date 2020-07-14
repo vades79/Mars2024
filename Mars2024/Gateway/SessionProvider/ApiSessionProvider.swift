@@ -9,11 +9,29 @@
 import Foundation
 
 protocol ApiSessionProvider {
-    var authProvider: AuthProvider {get set}
-    
     init(authProvider: AuthProvider)
 
     func sessioned(route: ApiRoute) -> ApiRoute
+}
+
+class ApiSessionProviderImpl: ApiSessionProvider {
     
-    func hasSession() -> Bool
+    let authProvider: AuthProvider
+
+    required init(authProvider: AuthProvider) {
+        self.authProvider = authProvider
+    }
+
+    func sessioned(route: ApiRoute) -> ApiRoute {
+        var sessionRoute = route
+        switch route.sessionType {
+        case .header:
+            var headers = sessionRoute.components.headers ?? [:]
+            headers["X-AUTH-TOKEN"] = authProvider.token ?? ""
+            sessionRoute.components.headers = headers
+        default:
+            break
+        }
+        return sessionRoute
+    }
 }

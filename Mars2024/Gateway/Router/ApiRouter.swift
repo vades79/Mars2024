@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol ApiRouter {
     var config: Config? { get set }
@@ -22,18 +23,12 @@ extension ApiRouter {
     }
     
     func route() -> ApiRoute {
-        let timeZone = "\(NSTimeZone.local.identifier),\(NSTimeZone.local.secondsFromGMT())"
-        let appVersion = "ios:\(Bundle.main.releaseVersionNumber ?? "")"
-        let defaultHeader = ["X-Time-Zone": timeZone,
-                             "X-APP-VERSION" : appVersion]
         let components = ApiComponents(
             url: baseUrl,
             method: .get,
             encoding: URLEncoding.default,
             data: nil,
-            headers: defaultHeader,
-            multipertItems: nil
-        )
+            headers: nil)
         return ApiRoute(components: components, sessionType: .header)
     }
 }

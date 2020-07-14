@@ -1,5 +1,5 @@
 //
-//  ProfileRouter.swift
+//  LaunchDetailsRouter.swift
 //  Mars2024
 //
 //  Created by Vladislav Mityuklyaev on 13.07.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ProfileRouter: class {
+protocol LaunchDetailsRouter: class {
     
 }

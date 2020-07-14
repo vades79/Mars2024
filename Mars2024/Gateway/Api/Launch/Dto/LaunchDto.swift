@@ -32,7 +32,7 @@ class LaunchDto: Mappable {
         return Launch(flightNumber: flightNumber,
                       missionName: missionName,
                       details: details,
-                      date: date?.toDate(formatterType: .utc),
+                      date: date,
                       missionPatch: URL(string: links?.missionPatch ?? ""),
                       missionPatchSmall: URL(string: links?.missionPatchSmall ?? ""),
                       images: links?.convertToUrl())

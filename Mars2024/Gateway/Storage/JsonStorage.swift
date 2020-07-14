@@ -11,45 +11,72 @@ import RealmSwift
 
 class JsonStorage: StorageBase {
     func saveJsonDto<DtoType: JSONCodable>(_ form: DtoType, storageKey: String) {
-        let realm = try! Realm()
-        let result = realm.objects(JsonObject.self).filter({
-            $0.key == storageKey
-        }).first
-        
-        try! realm.write({
-            if let result = result {
-                result.updateWithForm(form)
-            } else {
-                let object = JsonObject.fromForm(form)
-                object.key = storageKey
-                realm.add(object)
+        do {
+            let realm = try Realm()
+            let result = realm.objects(JsonObject.self).filter({
+                $0.key == storageKey
+            }).first
+            
+            do {
+                try realm.write({
+                    if let result = result {
+                        result.updateWithForm(form)
+                    } else {
+                        let object = JsonObject.fromForm(form)
+                        object.key = storageKey
+                        realm.add(object)
+                    }
+                })
+            } catch {
+                print(error.localizedDescription)
             }
-        })
+            
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     func getJsonDto<DtoType: JSONCodable>(storageKey: String) -> DtoType? {
-        let realm = try! Realm()
-        let form = realm.objects(JsonObject.self).filter({
-            $0.key == storageKey
-        }).first
-        let result: DtoType? = form?.toForm()
-        return result
+        do {
+            let realm = try Realm()
+            let form = realm.objects(JsonObject.self).filter({
+                $0.key == storageKey
+            }).first
+            let result: DtoType? = form?.toForm()
+            return result
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
     }
     
     func removeJson(storageKey: String) {
-        let realm = try! Realm()
-        guard let form = realm.objects(JsonObject.self).filter({
-            $0.key == storageKey
-        }).first else {
-            return
+        do {
+            let realm = try Realm()
+            guard let form = realm.objects(JsonObject.self).filter({
+                $0.key == storageKey
+            }).first else {
+                return
+            }
+            
+            do {
+                try realm.write({
+                    realm.delete(form)
+                })
+            } catch {
+                print(error.localizedDescription)
+            }
+        } catch {
+            print(error.localizedDescription)
         }
-        try! realm.write({
-            realm.delete(form)
-        })
     }
     
     func truncateJson() {
-        let realm = try! Realm()
-        JsonObject.truncate(in: realm)
+        do {
+            let realm = try Realm()
+            JsonObject.truncate(in: realm)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }

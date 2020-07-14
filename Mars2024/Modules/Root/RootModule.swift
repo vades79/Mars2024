@@ -92,7 +92,7 @@ extension RootModule: RootRouter {
         signUpModule = nil
         registrationModule = nil
         launchListModule = LaunchListModule()
-        setRootController(launchListModule!.entry(), forWindow: entry())
+        setRootController(launchListModule!.entry().navigatable(), forWindow: entry())
     }
 }
 

@@ -17,6 +17,10 @@ class Dependencies {
     
     private init() {
         
+        container.register(Config.self) { _ in
+            ConfigImpl()
+        }.inObjectScope(.container)
+        
         container.register(AuthProvider.self) { (_) in
             return AuthProviderImpl()
         }
@@ -36,6 +40,19 @@ class Dependencies {
             return PersonGatewayImpl()
         }
         
+        container.register(LaunchRouter.self) { (r) in
+            let config = r.resolve(Config.self)!
+            
+            return LaunchRouterImpl(config: config)
+        }
+        
+        container.register(LaunchGateway.self) { (r) in
+            let router = r.resolve(LaunchRouter.self)!
+            let provider = r.resolve(ApiSessionProvider.self)!
+            
+            return LaunchGatewayImpl(router: router, sessionProvider: provider)
+        }
+        
     }
     
     private func storage() {
@@ -53,9 +70,16 @@ class Dependencies {
             let gateway = r.resolve(PersonGateway.self)!
             let authProvider = r.resolve(AuthProvider.self)!
             let personStorage = r.resolve(PersonStorage.self)!
+            
             return PersonRepositoryImpl(gateway: gateway,
                                         authProvider: authProvider,
                                         personStorage: personStorage)
+        }
+        
+        container.register(LaunchRepository.self) { (r) in
+            let gateway = r.resolve(LaunchGateway.self)!
+            
+            return LaunchRepositoryImpl(gateway: gateway)
         }
     }
 }

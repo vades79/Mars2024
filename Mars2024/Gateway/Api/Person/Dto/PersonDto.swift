@@ -53,7 +53,7 @@ class PersonDto: Mappable {
         let dto = PersonDto()
         dto.givename = model.givename
         dto.familyname = model.familyname
-        dto.birthDate = model.birthDate?.toString(formatterType: .stringTimestamp)
+        dto.birthDate = model.birthDate?.toString(.stringTimestamp)
         dto.photoUrl = model.photoUrl?.absoluteString
         return dto
     }

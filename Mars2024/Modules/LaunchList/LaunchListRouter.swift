@@ -9,5 +9,6 @@
 import Foundation
 
 protocol LaunchListRouter: class {
-    
+    func openLaunchDetails(launch: Launch)
+    func logout()
 }

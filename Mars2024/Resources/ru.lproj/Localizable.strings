@@ -33,17 +33,17 @@
 "RegistrationSkipBtnTitle" = "Skip";
 
 /* Pick photo */
-"PhotoPickChoosePhotoSource" = "Where do you want to choose a photo from?";
-"PhotoPickPhotoLibrary" = "Choose from photo library";
-"PhotoPickCamera" = "Take a photo";
-"PhotoPickRemove" = "Remove a photo";
+"PhotoPickChoosePhotoSource" = "От куда вы хотите выбрать фотографию?";
+"PhotoPickPhotoLibrary" = "Выбрать из галлереи";
+"PhotoPickCamera" = "Сделать снимок";
+"PhotoPickRemove" = "Удалить фото";
 "PhotoPickCancel" = "Отмена";
 
 /* Validation errors */
 "ValidationRequied" = "Это обязательно нужно заполнить";
 "ValidationAlphabetic" = "Можно использовать только буквы";
-"ValidationTooSmall" = "Напишите быть больше %d символов";
-"ValidationIllegalAge" = "Все астронавты старше 18 лет";
+"ValidationTooSmall" = "Здесь должно быть больше %d символов";
+"ValidationIllegalAge" = "Астронавту должно быть больше 18 лет";
 
 /* SignUp */
 "SignUpTitle" = "Welcome to Mars2024";
@@ -56,3 +56,12 @@
 
 /* Agreement */
 "AgreementTitle" = "Nobody ever reads the agreements,\nso we did not write them :]";
+
+/*  Launch list */
+"LaunchListLogOutTitle" = "Logout";
+"LaunchListLogOutSubtitle" = "Are you sure you want to exit?";
+"LaunchListLogOutAccept" = "Sure";
+"LaunchListLogOutDecline" = "Cancel";
+
+/* Launch Details */
+"LaunchDetailsEmptyDescription" = "No description";
