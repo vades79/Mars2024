@@ -10,7 +10,7 @@ import Foundation
 
 class BasePresenter<View> {
     
-    private var _view: AnyObject?
+    private weak var _view: AnyObject?
     
     var view: View? {
         get {
