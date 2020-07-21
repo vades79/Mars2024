@@ -43,29 +43,38 @@ class LaunchDetailsPresenterImpl: BasePresenter<LaunchDetailsView>, LaunchDetail
         guard let url = url else {
             return
         }
+        view?.enableHeaderIndicatorView(true)
         launchesRepository?
             .loadImage(url: url)
-        .subscribe(
-            onNext: { [weak self] (image) in
-                self?.view?.addHeaderImage(image)
-        })
-        .disposed(by: disposeBag)
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
+            .subscribe(
+                onNext: { [weak self] (image) in
+                    self?.view?.addHeaderImage(image)
+                    self?.view?.enableHeaderIndicatorView(false)
+                }, onError: { [weak self] (_) in
+                    self?.view?.enableHeaderIndicatorView(false)
+                })
+            .disposed(by: disposeBag)
     }
     
     private func loadImages(_ urls: [URL?]?) {
         guard let urls = urls, !urls.isEmpty else {
             return
         }
+        
         view?.enableIndicatorView(true)
         launchesRepository?
-        .loadImages(urls: urls)
+            .loadImages(urls: urls)
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] (images) in
                 self?.view?.addFlickrImage(images)
                 self?.view?.enableIndicatorView(false)
-            }, onError: { [weak self] (error) in
-                print(error.localizedDescription)
-                self?.view?.enableIndicatorView(false)
-            })
-        .disposed(by: disposeBag)
+                }, onError: { [weak self] (error) in
+                    print(error.localizedDescription)
+                    self?.view?.enableIndicatorView(false)
+                })
+            .disposed(by: disposeBag)
     }
 }

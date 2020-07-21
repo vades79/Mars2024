@@ -15,6 +15,7 @@ protocol LaunchDetailsView: BaseView {
     func addHeaderImage(_ image: UIImage)
     func addFlickrImage(_ images: [UIImage])
     func enableIndicatorView(_ bool: Bool)
+    func enableHeaderIndicatorView(_ bool: Bool)
 }
 
 class LaunchDetailsViewController: BaseViewController {
@@ -23,12 +24,14 @@ class LaunchDetailsViewController: BaseViewController {
     var scrollView: UIScrollView!
     var contentView: UIView!
     
-    var imageView: UIImageView!
+    var headerImageView: UIImageView!
     var labelsStackView: UIStackView!
     var titleLabel: UILabel!
     var separatorView: UIView!
     var subtitleLabel: UILabel!
     var imagesView: ImagesView!
+    
+    var headerImageActivityIndicator: UIActivityIndicatorView!
     var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
@@ -52,7 +55,7 @@ class LaunchDetailsViewController: BaseViewController {
         
         contentView = UIView()
         
-        imageView = UIImageView()
+        headerImageView = UIImageView()
         
         labelsStackView = UIStackView()
         labelsStackView.axis = .vertical
@@ -74,18 +77,22 @@ class LaunchDetailsViewController: BaseViewController {
         imagesView = ImagesView()
         imagesView.isHidden = true
         
+        headerImageActivityIndicator = UIActivityIndicatorView()
+        
         activityIndicator = UIActivityIndicatorView()
+        activityIndicator.backgroundColor = .lightGray
         
         // MARK: - Layout
         
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
-        contentView.addSubview(imageView)
+        contentView.addSubview(headerImageView)
         contentView.addSubview(labelsStackView)
         labelsStackView.addArrangedSubview(titleLabel)
         labelsStackView.addArrangedSubview(separatorView)
         labelsStackView.addArrangedSubview(subtitleLabel)
         contentView.addSubview(imagesView)
+        contentView.addSubview(headerImageActivityIndicator)
         contentView.addSubview(activityIndicator)
         
         scrollView.snp.makeConstraints { (make) in
@@ -97,15 +104,15 @@ class LaunchDetailsViewController: BaseViewController {
             make.width.equalTo(UIScreen.main.bounds.width)
         }
         
-        imageView.snp.makeConstraints { (make) in
+        headerImageView.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(8)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().offset(-28.scaled * 2)
-            make.size.equalTo(imageView.snp.width)
+            make.size.equalTo(headerImageView.snp.width)
         }
         
         labelsStackView.snp.makeConstraints { (make) in
-            make.top.equalTo(imageView.snp.bottom).offset(24.vscaled)
+            make.top.equalTo(headerImageView.snp.bottom).offset(24.vscaled)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().offset(-28.scaled * 2)
         }
@@ -122,8 +129,13 @@ class LaunchDetailsViewController: BaseViewController {
             make.bottom.equalToSuperview().offset(-48.vscaled)
         }
         
+        headerImageActivityIndicator.snp.makeConstraints { (make) in
+            make.center.equalTo(headerImageView)
+        }
+        
         activityIndicator.snp.makeConstraints { (make) in
-            make.centerX.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.centerY.equalTo(imagesView)
         }
     }
 }
@@ -144,7 +156,8 @@ extension LaunchDetailsViewController: LaunchDetailsView {
     
     func addHeaderImage(_ image: UIImage) {
         DispatchQueue.main.async {
-            self.imageView.image = image
+            self.headerImageView.image = image
+            self.headerImageActivityIndicator.stopAnimating()
         }
     }
     
@@ -157,9 +170,18 @@ extension LaunchDetailsViewController: LaunchDetailsView {
         }
     }
     
+    func enableHeaderIndicatorView(_ bool: Bool) {
+        if bool {
+            headerImageActivityIndicator.startAnimating()
+        } else {
+            headerImageActivityIndicator.stopAnimating()
+        }
+    }
+    
     func enableIndicatorView(_ bool: Bool) {
         if bool {
             activityIndicator.startAnimating()
+            imagesView.setPreviousHeight()
         } else {
             activityIndicator.stopAnimating()
         }

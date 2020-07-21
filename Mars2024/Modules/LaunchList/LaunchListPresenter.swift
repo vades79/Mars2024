@@ -55,6 +55,8 @@ class LaunchListPresenterImpl: LaunchListPresenter {
         isPageLoading = true
         launchesRepository?
             .launches(limit: 20, offset: lastIndex ?? 0)
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
+            .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { [weak self] (launches) in
                     guard let `self` = self else {

@@ -63,6 +63,10 @@ class Dependencies {
         container.register(PersonStorage.self) { (_) in
             return PersonStorageImpl()
         }
+        
+        container.register(ImageCacheStorage.self) { (_) in
+            return ImageCacheStorageImpl()
+        }
     }
     
     private func repository() {

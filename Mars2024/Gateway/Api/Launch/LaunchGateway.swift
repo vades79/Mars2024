@@ -65,8 +65,12 @@ class LaunchGatewayImpl: ApiProvider, LaunchGateway {
     func loadImage(url: URL) -> Observable<UIImage> {
         return Observable.create { (observer) -> Disposable in
             Alamofire.request(url).responseImage { (response) in
-                if case .success(let image) = response.result {
+                switch response.result {
+                case .success(let image):
                     observer.onNext(image)
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
                 }
             }
             return Disposables.create()

@@ -36,6 +36,7 @@
 		5F25A42724BCFC4A00BBC2D6 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42524BCFC4A00BBC2D6 /* PersonRepository.swift */; };
 		5F25A42924BD037F00BBC2D6 /* LaunchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42824BD037F00BBC2D6 /* LaunchList.swift */; };
 		5F25A42D24BD0ACB00BBC2D6 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F25A42C24BD0ACB00BBC2D6 /* BaseResponse.swift */; };
+		5F2E66EF24C60B6D00A96608 /* ImageCacheStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E66EE24C60B6D00A96608 /* ImageCacheStorage.swift */; };
 		5F6BA26724B99D1B008CDDD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BA26624B99D1B008CDDD0 /* GoogleService-Info.plist */; };
 		5F6BA26C24B9A6E4008CDDD0 /* PersonGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA26B24B9A6E4008CDDD0 /* PersonGateway.swift */; };
 		5F6BA26F24B9A8D8008CDDD0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BA26E24B9A8D8008CDDD0 /* Person.swift */; };
@@ -90,6 +91,7 @@
 		5F6EB4F224B8B2FB00D85724 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EB4F124B8B2FB00D85724 /* UIViewController+Navigation.swift */; };
 		5F6EB4F424B8B5DF00D85724 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EB4F324B8B5DF00D85724 /* AuthProvider.swift */; };
 		5F6EB4F724B8B60300D85724 /* AuthProviderErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EB4F624B8B60300D85724 /* AuthProviderErrors.swift */; };
+		5F970BA424C6594C001EFFCC /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F970BA324C6594C001EFFCC /* ImageCacher.swift */; };
 		5FE8D21E24BAFB7200AC3CCC /* LauncherModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8D21D24BAFB7200AC3CCC /* LauncherModule.swift */; };
 		5FE8D22024BAFCA900AC3CCC /* LauncherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8D21F24BAFCA900AC3CCC /* LauncherPresenter.swift */; };
 		5FE8D22224BAFCC700AC3CCC /* LauncherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8D22124BAFCC700AC3CCC /* LauncherRouter.swift */; };
@@ -171,6 +173,7 @@
 		5F25A42524BCFC4A00BBC2D6 /* PersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		5F25A42824BD037F00BBC2D6 /* LaunchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchList.swift; sourceTree = "<group>"; };
 		5F25A42C24BD0ACB00BBC2D6 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		5F2E66EE24C60B6D00A96608 /* ImageCacheStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheStorage.swift; sourceTree = "<group>"; };
 		5F6BA26624B99D1B008CDDD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F6BA26B24B9A6E4008CDDD0 /* PersonGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonGateway.swift; sourceTree = "<group>"; };
 		5F6BA26E24B9A8D8008CDDD0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -233,6 +236,7 @@
 		5F6EB4F124B8B2FB00D85724 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		5F6EB4F324B8B5DF00D85724 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		5F6EB4F624B8B60300D85724 /* AuthProviderErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderErrors.swift; sourceTree = "<group>"; };
+		5F970BA324C6594C001EFFCC /* ImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacher.swift; sourceTree = "<group>"; };
 		5FE8D21D24BAFB7200AC3CCC /* LauncherModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherModule.swift; sourceTree = "<group>"; };
 		5FE8D21F24BAFCA900AC3CCC /* LauncherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherPresenter.swift; sourceTree = "<group>"; };
 		5FE8D22124BAFCC700AC3CCC /* LauncherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherRouter.swift; sourceTree = "<group>"; };
@@ -458,6 +462,7 @@
 				5F6BA27424B9ABC0008CDDD0 /* Models */,
 				5F6BA27724B9B4A1008CDDD0 /* StorageBase.swift */,
 				5F6BA27924B9B570008CDDD0 /* JsonStorage.swift */,
+				5F2E66EE24C60B6D00A96608 /* ImageCacheStorage.swift */,
 				5F6BA2B624BA07DF008CDDD0 /* PersonStorage */,
 			);
 			path = Storage;
@@ -613,6 +618,7 @@
 			children = (
 				5F6EB4F524B8B5F400D85724 /* AuthProvider */,
 				5FE8D25024BB633D00AC3CCC /* ValidateService.swift */,
+				5F970BA324C6594C001EFFCC /* ImageCacher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1184,6 +1190,7 @@
 				5F6BA2CF24BA1E17008CDDD0 /* UIButton+Style.swift in Sources */,
 				5F6BA28224B9BC03008CDDD0 /* PersonError.swift in Sources */,
 				5FE8D26C24BB98EB00AC3CCC /* String+AttributedText.swift in Sources */,
+				5F2E66EF24C60B6D00A96608 /* ImageCacheStorage.swift in Sources */,
 				5F6EB4C024B7180400D85724 /* DeepLinkHandling.swift in Sources */,
 				5F25A40624BCD5C100BBC2D6 /* ApiComponents.swift in Sources */,
 				5F6EB4F224B8B2FB00D85724 /* UIViewController+Navigation.swift in Sources */,
@@ -1220,6 +1227,7 @@
 				5F6BA2BB24BA10AE008CDDD0 /* ApiError.swift in Sources */,
 				5F25A3D424BCA74500BBC2D6 /* LaunchListRouter.swift in Sources */,
 				5FE8D24C24BB3A6900AC3CCC /* ChangeAvatarView.swift in Sources */,
+				5F970BA424C6594C001EFFCC /* ImageCacher.swift in Sources */,
 				5F6EB4D224B759BE00D85724 /* BaseViewController.swift in Sources */,
 				5F6EB4BA24B711F000D85724 /* BaseNavigationController.swift in Sources */,
 				5FFCDFE724BD29D600302847 /* ImagesView.swift in Sources */,

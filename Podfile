@@ -24,8 +24,8 @@ target 'Mars2024' do
   pod 'GoogleSignIn'
   pod 'Texture'
   pod 'Alamofire'
-  pod 'AlamofireImage', '~> 3.5'
   pod 'RxAlamofire', '~> 5.0'
+  pod 'AlamofireImage'
 
   target 'Mars2024Tests' do
     inherit! :search_paths

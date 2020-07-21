@@ -30,7 +30,10 @@ class LaunchRepositoryImpl: LaunchRepository {
     }
     
     func loadImage(url: URL) -> Observable<UIImage> {
-        return gateway.loadImage(url: url)
+        return gateway.loadImage(url: url).map { (image) in
+            ImageCacher.shared.add(image: image, forUrl: url)
+            return image
+        }
     }
     
     func loadImages(urls: [URL?]) -> Observable<[UIImage]> {
@@ -40,7 +43,13 @@ class LaunchRepositoryImpl: LaunchRepository {
             var images = [UIImage]()
             
             for url in urls {
-                if let url = url {
+                guard let url = url else {
+                    continue
+                }
+                
+                if let image = ImageCacher.shared.loadImage(forUrl: url) {
+                    images.append(image)
+                } else {
                     tasks.append(self.loadImage(url: url))
                 }
             }

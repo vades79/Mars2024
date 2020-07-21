@@ -48,4 +48,10 @@ class ImagesView: UIScrollView {
             }
         }
     }
+    
+    func setPreviousHeight() {
+        imagesStackView.snp.makeConstraints { (make) in
+            make.height.equalTo(200)
+        }
+    }
 }
